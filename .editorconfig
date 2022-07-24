@@ -8,6 +8,6 @@ trim_trailing_whitespace = true
 end_of_line = lf
 charset = utf-8
 
-[{*.go,go.mod,go.sum}]
+[{*.go,go.mod,go.sum,*.md}]
 indent_style = tab
 indent_size = 4

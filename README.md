@@ -17,10 +17,10 @@ go get gopkg.ilharper.com/x/isatty
 import "gopkg.ilharper.com/x/isatty"
 
 if isatty.Isatty(os.Stdout.Fd()) {
-    // Is a tty
+	// Is a tty
 }
 else {
-    // Isn't a tty
+	// Isn't a tty
 }
 ```
 
