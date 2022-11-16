@@ -1,5 +1,5 @@
 package isatty
 
-func Isatty(fd uintptr) bool {
+func isattyIntl(fd uintptr) bool {
 	return false
 }

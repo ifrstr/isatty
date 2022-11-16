@@ -5,6 +5,12 @@
 
 Determine whether the stream is a tty.
 
+## Features
+
+- Supports most platforms
+
+- Supports force override using environment variable `FORCE_TTY`
+
 ## Install
 
 ```sh
@@ -17,14 +23,28 @@ go get gopkg.ilharper.com/x/isatty
 import "gopkg.ilharper.com/x/isatty"
 
 if isatty.Isatty(os.Stdout.Fd()) {
-	// Is a tty
-}
-else {
-	// Isn't a tty
+	// TTY
+} else {
+	// Not TTY
 }
 ```
 
 [![Go Reference](https://pkg.go.dev/badge/gopkg.ilharper.com/x/isatty.svg)](https://pkg.go.dev/gopkg.ilharper.com/x/isatty)
+
+## Using `FORCE_TTY`
+
+User can override the result using the environment variable `FORCE_TTY`.
+
+```ini
+# Force TTY
+FORCE_TTY=
+FORCE_TTY=1
+FORCE_TTY=true
+
+# Force not TTY
+FORCE_TTY=0
+FORCE_TTY=false
+```
 
 ## LICENSE
 

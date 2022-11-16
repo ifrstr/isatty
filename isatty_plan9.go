@@ -2,7 +2,7 @@ package isatty
 
 import "syscall"
 
-func Isatty(fd uintptr) bool {
+func isattyIntl(fd uintptr) bool {
 	path, err := syscall.Fd2path(int(fd))
 	if err != nil {
 		return false
