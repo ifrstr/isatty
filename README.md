@@ -46,6 +46,14 @@ FORCE_TTY=0
 FORCE_TTY=false
 ```
 
+## Test
+
+To determine whether the current `stdout` is a tty:
+
+```sh
+go test
+```
+
 ## LICENSE
 
 [MIT](https://github.com/ifrstr/isatty/blob/master/LICENSE)
