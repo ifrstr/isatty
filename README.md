@@ -54,6 +54,10 @@ To determine whether the current `stdout` is a tty:
 go test
 ```
 
+## Defects on Windows
+
+See #3.
+
 ## LICENSE
 
 [MIT](https://github.com/ifrstr/isatty/blob/master/LICENSE)
