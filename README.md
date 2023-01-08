@@ -56,7 +56,7 @@ go test
 
 ## Defects on Windows
 
-See #3.
+See [#3](https://github.com/ifrstr/isatty/issues/3).
 
 ## LICENSE
 
